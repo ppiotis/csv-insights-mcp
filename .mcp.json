@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "csv-insights": {
+      "command": "npx",
+      "args": ["-y", "github:ppiotis/csv-insights-mcp"]
+    }
+  }
+}

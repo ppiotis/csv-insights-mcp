@@ -1,0 +1,53 @@
+{
+  "name": "csv-insights-mcp",
+  "version": "1.0.0",
+  "description": "Private, local CSV analysis MCP server: profile, query, summarise, clean, pivot and chart CSV files from an allowlisted folder. No network, no auth.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Paris Piotis",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ppiotis/csv-insights-mcp"
+  },
+  "homepage": "https://github.com/ppiotis/csv-insights-mcp#readme",
+  "keywords": [
+    "mcp",
+    "csv",
+    "data-analysis",
+    "grok-bot",
+    "cursor-plugin"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "csv-insights-mcp": "dist/stdio.js",
+    "csv-insights-mcp-http": "dist/serve-http.js"
+  },
+  "files": [
+    "dist",
+    "skills",
+    ".mcp.json",
+    "plugin.json",
+    ".cursor-plugin",
+    "logo.svg"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/stdio.js",
+    "start:http": "node dist/serve-http.js",
+    "test": "npm run build && vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "papaparse": "^5.7.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/papaparse": "^5.5.2",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.4"
+  }
+}

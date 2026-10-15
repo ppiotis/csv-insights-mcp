@@ -1,0 +1,15 @@
+{
+  "name": "csv-insights",
+  "displayName": "CSV Insights",
+  "version": "1.0.0",
+  "description": "Private, local CSV analysis: profile, query, summarise, clean, pivot and chart spreadsheets from one allowlisted folder. No network, no accounts, no telemetry.",
+  "author": { "name": "Paris Piotis", "url": "https://github.com/ppiotis" },
+  "homepage": "https://github.com/ppiotis/csv-insights-mcp",
+  "repository": "https://github.com/ppiotis/csv-insights-mcp",
+  "license": "MIT",
+  "logo": "logo.svg",
+  "keywords": ["csv", "spreadsheet", "data analysis", "sales", "finance", "privacy"],
+  "category": "data",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}
