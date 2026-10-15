@@ -39,7 +39,7 @@ Requires Node.js 20+.
   "mcpServers": {
     "csv-insights": {
       "command": "npx",
-      "args": ["-y", "github:ppiotis/csv-insights-mcp"],
+      "args": ["-y", "https://github.com/ppiotis/csv-insights-mcp/archive/refs/tags/v1.0.0.tar.gz"],
       "env": { "CSV_INSIGHTS_DIR": "/absolute/path/to/your/csv/folder" }
     }
   }
